@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{%  load static  %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Url</title>
+</head>
+<body>
+<form action="/show/" method="get">
+    {%csrf_token%}
+    {{form}}
+    <input name="url" type="text" style= "width : 300px">
+    <input type="submit" style="color:black">
+</form>
+</body>
+</html>
